@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Express</h1><p id="b">Welcome to Express</p><div>avcdfae</div><script>var b = document.getElementById('b')
+b.onclick = function(e) {
+  alert('send to rn');
+  window.postMessage('data', 'data2')
+}
+
+alert("HI");
+document.addEventListener("message", function(data) {
+  alert(data.data);
+  document.write(data.data);
+});</script></body></html>
